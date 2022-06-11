@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Room</string>
+    <string name="name_edit_text">Введите имя:</string>
+    <string name="email_edit_text">Введите почту:</string>
+    <string name="phone_edit_text">Введите номер телефона:</string>
+    <string name="save_btn">Сохранить</string>
+    <string name="show_all_users_btn">Вывести список</string>
+    <string name="delete_all_users_btn">delete all users</string>
+    <string name="delete_user_text_view">delete user</string>
+    <string name="edit_name_text_view">edit fields</string>
+    <string name="edit_email_text_view">edit email</string>
+    <string name="edit_phone_text_view">edit phone</string>
+</resources>
