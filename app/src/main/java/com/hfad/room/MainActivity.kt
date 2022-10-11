@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import com.hfad.room.dao.UsersDao
@@ -25,7 +27,6 @@ class MainActivity : AppCompatActivity() {
 
         usersDao = (application as App).getDatabase().usersDao()
 
-
         binding.saveBtn.setOnClickListener {
             lifecycleScope.launch(Dispatchers.IO) {
                 if(isInvalid()) {
@@ -44,11 +45,11 @@ class MainActivity : AppCompatActivity() {
         binding.showAllUserBtn.setOnClickListener {
             val intent = Intent(this, UsersActivity::class.java)
             startActivity(intent)
-
             }
         }
 
     private fun isInvalid(): Boolean {
+
         if (binding.nameEditTxt.text?.trim().toString().isEmpty()) {
             Toast.makeText(this, "Введите имя", Toast.LENGTH_SHORT).show()
             return false
@@ -59,6 +60,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Введите номер телефона", Toast.LENGTH_SHORT).show()
             return false
         }
+
         return true
     }
 }
