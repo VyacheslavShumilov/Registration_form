@@ -10,4 +10,13 @@
     <string name="edit_name_text_view">edit fields</string>
     <string name="edit_email_text_view">edit email</string>
     <string name="edit_phone_text_view">edit phone</string>
+    <string name="name_edit_txt">name</string>
+    <string name="email_edit_txt">email</string>
+    <string name="phone_edit_txt">phone</string>
+    <string name="edit_saved_edit_txt">edit saved</string>
+    <string name="save_txt_btn">Сохранить</string>
+    <string name="user_id_txt_view">User id:</string>
+    <string name="user_name_txt_view">User name:</string>
+    <string name="e_mail_txt_view">e-mail:</string>
+    <string name="phone_number_txt_view">Phone number</string>
 </resources>

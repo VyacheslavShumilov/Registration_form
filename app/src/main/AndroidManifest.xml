@@ -17,13 +17,13 @@
         android:theme="@style/Theme.Room"
         tools:targetApi="31">
         <activity
-            android:name=".EditUserActivity"
+            android:name=".user.EditUserActivity"
             android:exported="false" />
         <activity
-            android:name=".UsersActivity"
+            android:name=".users.UsersActivity"
             android:exported="false" />
         <activity
-            android:name=".UserActivity"
+            android:name=".user.UserActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

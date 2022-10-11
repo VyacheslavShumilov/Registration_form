@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:padding="16dp"
-    tools:context=".UserActivity">
+    android:padding="@dimen/activity_user_padding"
+    tools:context=".user.UserActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -17,33 +16,33 @@
             android:id="@+id/idTextView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="User id:"
-            android:textSize="20sp"
+            android:text="@string/user_id_txt_view"
+            android:textSize="@dimen/activity_user_txt_size_header"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/nameTextView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="User name:"
-            android:textSize="15sp" />
+            android:layout_marginTop="@dimen/activity_user_margin_top"
+            android:text="@string/user_name_txt_view"
+            android:textSize="@dimen/activity_user_txt_size_medium" />
 
         <TextView
             android:id="@+id/emailTextView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="e-mail:"
-            android:textSize="15sp" />
+            android:layout_marginTop="@dimen/activity_user_margin_top"
+            android:text="@string/e_mail_txt_view"
+            android:textSize="@dimen/activity_user_txt_size_medium" />
 
         <TextView
             android:id="@+id/phoneTextView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="Phone number"
-            android:textSize="15sp" />
+            android:layout_marginTop="@dimen/activity_user_margin_top"
+            android:text="@string/phone_number_txt_view"
+            android:textSize="@dimen/activity_user_txt_size_medium" />
 
     </LinearLayout>
 
@@ -51,40 +50,36 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="@dimen/activity_main_margin_start"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/idTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textSize="20sp"
+            android:textSize="@dimen/activity_user_txt_size_header"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/nameTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="TextView"
-            android:textSize="15sp" />
+            android:layout_marginTop="@dimen/activity_user_margin_top"
+            android:textSize="@dimen/activity_user_txt_size_medium" />
 
         <TextView
             android:id="@+id/emailTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="TextView"
-            android:textSize="15sp" />
+            android:layout_marginTop="@dimen/activity_user_margin_top"
+            android:textSize="@dimen/activity_user_txt_size_medium" />
 
         <TextView
             android:id="@+id/phoneTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="TextView"
-            android:textSize="15sp" />
+            android:layout_marginTop="@dimen/activity_user_margin_top"
+            android:textSize="@dimen/activity_user_txt_size_medium" />
 
     </LinearLayout>
 
@@ -92,25 +87,25 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="15dp">
+        android:layout_marginStart="@dimen/activity_main_margin_start"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/deleteUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/delete_user_text_view"
-            android:textSize="20sp"
-            android:textColor="#D50000" />
+            android:textColor="#D50000"
+            android:textSize="@dimen/activity_user_txt_size_header" />
 
         <TextView
             android:id="@+id/editDataUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_user_margin_top"
             android:text="@string/edit_name_text_view"
             android:textColor="#D50000"
-            android:layout_marginTop="5dp"
-            android:textSize="15sp"/>
+            android:textSize="@dimen/activity_user_txt_size_medium" />
 
     </LinearLayout>
 

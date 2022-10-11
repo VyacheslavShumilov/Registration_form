@@ -1,13 +1,15 @@
-package com.hfad.room
+package com.hfad.room.users
 
 import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
+import com.hfad.room.App
 import com.hfad.room.dao.UsersDao
 import com.hfad.room.databinding.ActivityUsersBinding
 import com.hfad.room.model.Users
+import com.hfad.room.user.UserActivity
 import com.hfad.room.users.adapter.AdapterUsers
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

@@ -4,33 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditUserActivity"
+    tools:context=".user.EditUserActivity"
     android:padding="16dp"
     android:orientation="vertical">
 
     <EditText
         android:layout_width="match_parent"
         android:id="@+id/editName"
-        android:hint="name"
+        android:hint="@string/name_edit_txt"
         android:layout_height="wrap_content"/>
 
     <EditText
         android:layout_width="match_parent"
         android:id="@+id/editEmail"
-        android:hint="email"
+        android:hint="@string/email_edit_txt"
         android:layout_height="wrap_content"/>
 
     <EditText
         android:layout_width="match_parent"
         android:id="@+id/editPhone"
-        android:hint="phone"
+        android:hint="@string/phone_edit_txt"
         android:layout_height="wrap_content"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/saveData"
-        android:text="edit saved"/>
+        android:text="@string/edit_saved_edit_txt"/>
 
 
 </LinearLayout>

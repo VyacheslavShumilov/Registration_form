@@ -1,8 +1,9 @@
-package com.hfad.room
+package com.hfad.room.user
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
+import com.hfad.room.App
 import com.hfad.room.dao.UsersDao
 import com.hfad.room.databinding.ActivityEditUserBinding
 import kotlinx.coroutines.Dispatchers
@@ -31,7 +32,6 @@ class EditUserActivity : AppCompatActivity() {
         }
 
         binding.saveData.setOnClickListener {
-
             lifecycleScope.launch(Dispatchers.IO){
                 usersDao.editDataUser(
                     id.toLong(),
@@ -39,6 +39,7 @@ class EditUserActivity : AppCompatActivity() {
                     binding.editEmail.text.toString(),
                     binding.editPhone.text.toString())
             }
+            finish()
         }
     }
 }
